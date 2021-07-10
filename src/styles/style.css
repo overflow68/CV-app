@@ -1,0 +1,53 @@
+#tapatudoo {
+    padding: 20px;
+    background: #695e42;
+    color: #382a10;
+    font-size: 70px;
+  }
+
+  body{
+      background-color: #8c7a57;
+      margin: 0;
+  }
+
+  footer {
+    height: 30px;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #695e42;
+    color: #bda86a;
+    font-size: 16px;
+    
+  }
+
+  #file{
+    height: 1240px;
+    width: 874px;
+    border:solid black 1px;
+    background-color: white;
+    margin:12px;
+    box-shadow: 5px 5px 10px;
+  }
+
+  #fileInput{
+    height: 1240px;
+    width: 874px;
+    border:solid black 1px;
+    background-color: white;
+    margin:12px;
+    box-shadow: 5px 5px 10px;
+  }
+
+  #main{
+    margin: auto;
+    width: 90%;
+  }
+  #flexContainer{
+    align-items: center;
+    display:flex;
+    padding: 15px;
+  }
