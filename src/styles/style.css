@@ -1,13 +1,23 @@
-#tapatudoo {
+*{
+  margin:0;
+  padding:0;
+}
+
+#header {
     padding: 20px;
-    background: #695e42;
-    color: #382a10;
+    background: #afafaf;
+    color: #163991;
     font-size: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 
   body{
-      background-color: #8c7a57;
+      background-color: #cfcfcf;
       margin: 0;
+  }
+
+  textarea{
+    resize: none;
   }
 
   footer {
@@ -18,15 +28,15 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: #695e42;
-    color: #bda86a;
+    background-color: #7d7d7d;
+    color: #163991;
     font-size: 16px;
     
   }
 
   #file{
-    height: 1240px;
-    width: 874px;
+    height: 297mm;
+    width: 210mm;
     border:solid black 1px;
     background-color: white;
     margin:12px;
@@ -34,12 +44,13 @@
   }
 
   #fileInput{
-    height: 1240px;
-    width: 874px;
+    min-height: 297mm;
+    width: 210mm;
     border:solid black 1px;
     background-color: white;
     margin:12px;
     box-shadow: 5px 5px 10px;
+    border-radius: 4px;
   }
 
   #main{
@@ -51,3 +62,148 @@
     display:flex;
     padding: 15px;
   }
+
+  #fileHeader{
+    width:100%;
+    height: 30mm;
+    background-color: #163991;
+    color:white;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    word-break: break-word;
+  }
+
+  #positionh{
+    font-size: 30px;
+    margin:5px;
+  }
+
+  #name{
+    font-size: 45px;
+    
+  }
+
+  #fileHeadInfo{
+    padding:15px;
+  }
+
+#body{
+  display: flex;
+}
+
+  #skills{
+    flex:3.4;
+    background-color: #ededed;
+    height: 267mm;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    word-break: break-word;
+  }
+
+  #personalInfo{
+    flex:1;
+    background-color: #d4d4d4;
+    max-height: 267mm;
+    padding: 20px;
+    display: inline-block;
+    word-break: break-word;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  #photo{
+    margin:auto;
+    width:100%;
+    height: 240px;
+    border: 1px solid;
+  }
+
+  #contactsTitle{
+    margin: 10px;
+    border-bottom: 1px solid;
+  }
+
+  .info{
+    padding:6px;
+  }
+
+ .label{
+    color:#163991;
+    width: 90%;
+    border-bottom: 1px solid #163991;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+  }
+
+  .field{
+    width: 95%;
+    padding: 12px;
+    margin: 5px;
+    border: 1px solid rgb(88, 88, 88);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .label1{
+    font-weight: bold;
+    color:rgb(37, 37, 37);
+    width: 95%;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .label2{
+    color:#163991;
+    width: 90%;
+    border-bottom: 1px solid #163991;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+  }
+  .label3{
+    font-weight: bold;
+    color:rgb(37, 37, 37);
+    width: 95%;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 4px;
+  }
+  .personalInfo{
+    margin: auto;
+    text-align: center;
+  }
+
+  .button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 20px;
+  }
+  
+  .button5:hover {
+    background-color: #555555;
+    color: white;
+    
+  }
+
+  .exp{
+    padding: 10px;
+    display:flex
+  }
+
+  .expfield{
+    flex: 1;
+  }
+
+.input{
+  margin: 25px;
+}

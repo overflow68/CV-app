@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = (props) =>{
 return(
-    <div id ={"tapatudoo"}>CV-maker</div>
+    <div id ="header">CV-maker</div>
 )
 }
 
