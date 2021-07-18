@@ -9,4 +9,14 @@ return(
 )
 }
 
-export default ExpDisplay;
+const EduDisplay = (props) =>{
+    return(
+        <div className = "exp">
+        <div className="data expfield">{props.edu.from}-{props.edu.to}</div>
+        <div className="occupation expfield"><div className= "label3">{props.edu.university}, {props.edu.city}</div> <div>Degree: {props.edu.degree}</div><div>Subject: {props.edu.subject}</div></div>
+        
+        </div>
+    )
+    }
+
+    export {ExpDisplay, EduDisplay};

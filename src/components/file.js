@@ -5,7 +5,7 @@ import {FileBody} from "./fileComponents/fileBody";
 
 const File = (props) =>{
 return(
-    <div id ={"file"}>
+    <div id ="file" className = "sticky">
         <FileHeader details ={props.detail} />
         <div id ="body">
             <FileBody object ={props.detail}/>

@@ -1,5 +1,6 @@
 import React from "react";
-import ExpDisplay from "./expComp";
+import {ExpDisplay} from "./expComp";
+import {EduDisplay} from "./expComp";
 const FileInfo = (props) =>{
 return(
     <div id="personalInfo">
@@ -33,7 +34,10 @@ const FileBody = (props) =>{
             {props.object.experience.map((exp) => {
         return <ExpDisplay exp = {exp}/>;
       })}
-            
+            <div className = "label">Education</div>
+            {props.object.education.map((edu) => {
+        return <EduDisplay edu = {edu}/>;
+      })}
             </div>
 
     )

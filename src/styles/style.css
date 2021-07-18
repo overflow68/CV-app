@@ -35,14 +35,21 @@
   }
 
   #file{
-    height: 297mm;
     width: 210mm;
+    top:0;
     border:solid black 1px;
     background-color: white;
     margin:12px;
     box-shadow: 5px 5px 10px;
     
+    
   }
+  #file.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+   
+}
 
   #fileInput{
     min-height: 297mm;

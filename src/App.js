@@ -18,7 +18,7 @@ let [cvObject,setState] = useState(
     number: "",
     email:"",
     description:"",
-    experience:[{id:uniqid(),position:"1",company:"",city:"",from:"",to:""},{id:uniqid(),position:"2",company:"",city:"",from:"",to:""},{id:uniqid(),position:"3",company:"",city:"",from:"",to:""},{id:uniqid(),position:"4",company:"",city:"",from:"",to:""},{id:uniqid(),position:"5",company:"",city:"",from:"",to:""},{id:uniqid(),position:"6",company:"",city:"",from:"",to:""},{id:uniqid(),position:"7",company:"",city:"",from:"",to:""},],
+    experience:[],
     education:[]
   });
   
@@ -35,6 +35,12 @@ let [cvObject,setState] = useState(
   const newExp = (e) => {
     setState(prevState => {
       return {...prevState,  experience:[...prevState.experience,{id:uniqid(),position:"",company:"",city:"",from:"",to:""}] }
+  })
+  
+  };
+  const newEdu = (e) => {
+    setState(prevState => {
+      return {...prevState,  education:[...prevState.education,{id:uniqid(),university:"",city:"",degree:"",subject:"",from:"",to:""}] }
   })
   
   };
@@ -55,18 +61,40 @@ console.log(copy.experience)
     
     
 }
+const handleRemoveItem1 = (e) => {
+  let copy =cvObject;
+  let index;
+  copy.education.map(edu =>{
+    let i = copy.education.indexOf(edu);
+    if(edu.id == e.target.dataset.id){index = i} ;
+  })
+   copy.education.splice(index,1);
+
+  setState(prevState => {
+    return {...prevState,education: copy.education }
+});
+
+  
+  
+}
 
   const editExp = (e) =>{
     setState(prevState => {
       return {...prevState,experience: prevState.experience.map(obj => (obj.id === e.target.dataset.id ? Object.assign(obj, { [e.target.dataset.field]: e.target.value }) : obj))}
   });
- console.log(cvObject.experience)
+ 
+  }
+  const editEdu = (e) =>{
+    setState(prevState => {
+      return {...prevState,education: prevState.education.map(obj => (obj.id === e.target.dataset.id ? Object.assign(obj, { [e.target.dataset.field]: e.target.value }) : obj))}
+  });
+
   }
   
   return (
     <div id="App">
     <Header/>
-    <div id="main"><div id ="flexContainer"><FileInput function3 ={handleRemoveItem} function2={handleChange} detail ={cvObject} function1 = {newExp} function ={editExp}/><File detail = {cvObject}/></div></div>
+    <div id="main"><div id ="flexContainer"><FileInput function3 ={handleRemoveItem} function2={handleChange} detail ={cvObject} function1 = {newExp} function ={editExp} function4 = {newEdu} function5={editEdu} function6= {handleRemoveItem1}/><File detail = {cvObject}/></div></div>
     <footer>Copyright © 2021 overflow68<a href ="https://github.com/overflow68"><img alt ="myGit" src = {git}></img></a></footer>
     </div>
   );

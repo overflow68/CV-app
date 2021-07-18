@@ -33,9 +33,25 @@ const Experience = (props) =>{
     )
     }
 
+    const Education = (props) =>{
+        return(
+            <div className ="personalInfo input">
+            <input data-field ="university" data-id ={props.obj.id} className = "field"  placeholder = "University" onChange={props.function1}value = {props.obj.university}></input>
+            <input data-field ="city" data-id ={props.obj.id} className = "field"  placeholder = "City" onChange={props.function1} value = {props.obj.city}></input>
+            <input data-field ="degree" data-id ={props.obj.id} className = "field"  placeholder = "Degree" onChange={props.function1} value = {props.obj.degree}></input>
+            <input data-field ="subject" data-id ={props.obj.id} className = "field"  placeholder = "Subject" onChange={props.function1} value = {props.obj.subject}></input>
+            <input data-field ="from" data-id ={props.obj.id} className = "field"  placeholder = "From" onChange={props.function1} value = {props.obj.from}></input>
+            <input data-field ="to" data-id ={props.obj.id} className = "field"  placeholder = "To" onChange={props.function1} value = {props.obj.to}></input>
+            <button className="button6" data-id ={props.obj.id} onClick={props.function2}>Delete</button>
+            
+        
+        
+            </div>
+        )
+        }
 
 
 
 
 
-export {PersonalInfo, Experience};
+export {PersonalInfo, Experience,Education};
