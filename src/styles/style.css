@@ -41,6 +41,7 @@
     background-color: white;
     margin:12px;
     box-shadow: 5px 5px 10px;
+    
   }
 
   #fileInput{
@@ -182,19 +183,39 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 13px;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
     margin: 20px;
   }
   
+  
   .button5:hover {
     background-color: #555555;
     color: white;
     
   }
+.button6 {
+    background-color: rgb(196, 66, 66);
+    color: black;
+    border: 2px solid #555555;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 20px;
+  }
 
+  .button6:hover {
+    background-color: white;
+    color: red;
+    
+  }
   .exp{
     padding: 10px;
     display:flex

@@ -10,7 +10,7 @@ return(
     
     <div className = "label">Experience</div>
     <div>{props.detail.experience.map((exp) => {
-        return <Experience function1= {props.function} id ={exp.id}/>;
+        return <Experience function2 ={props.function3} function1= {props.function} obj ={exp}/>;
       })}</div>
     <button onClick={props.function1} className = "button5">New</button>
     
