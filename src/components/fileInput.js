@@ -7,7 +7,7 @@ return(
     <div id ="fileInput"> 
     
     <div className = "label">Personal details</div>
-    <PersonalInfo function ={props.function2}/>
+    <PersonalInfo function1 = {props.function8} function ={props.function2}/>
     
     <div className = "label">Experience</div>
     <div>{props.detail.experience.map((exp) => {

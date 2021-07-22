@@ -5,7 +5,7 @@ const FileInfo = (props) =>{
 return(
     <div id="personalInfo">
 
-        <img  src = {props.picture} alt ="" id = "photo"></img>
+        <img  src = {props.photo} alt ="" id = "photo"></img>
 
         <div className = "label2"> Personal details</div>
 

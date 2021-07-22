@@ -2,7 +2,6 @@ import React from "react";
 import FileHeader from "./fileComponents/fileHeader";
 import {FileInfo} from "./fileComponents/fileBody";
 import {FileBody} from "./fileComponents/fileBody";
-import profile from '../images/profile.jpeg';
 
 const File = (props) =>{
 return(
@@ -13,7 +12,7 @@ return(
             <FileInfo address = {props.detail.address}
                       number = {props.detail.number}
                       email = {props.detail.email}
-                      picture = {profile}/>
+                      photo = {props.detail.photo}/>
             </div>
             </div>
 )

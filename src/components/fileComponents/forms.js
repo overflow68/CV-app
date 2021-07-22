@@ -10,6 +10,8 @@ return(
         <input  className = "field" id = "number" placeholder = "Number" onChange={props.function}></input>
         <input  className = "field" id = "email" placeholder = "Email" onChange={props.function}></input>
         <textarea  className = "field" id = "description" placeholder = "Description" onChange={props.function}></textarea>
+        <input type="file" className = "field" onChange = {props.function1} ></input>
+        
         
 
 
