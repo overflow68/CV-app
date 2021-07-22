@@ -50,7 +50,7 @@ let [cvObject,setState] = useState(
     let index;
     copy.experience.map(exp =>{
       let i = copy.experience.indexOf(exp);
-      if(exp.id == e.target.dataset.id){index = i} ;
+      if(exp.id === e.target.dataset.id){index = i} ;
     })
      copy.experience.splice(index,1);
 console.log(copy.experience)
@@ -66,7 +66,7 @@ const handleRemoveItem1 = (e) => {
   let index;
   copy.education.map(edu =>{
     let i = copy.education.indexOf(edu);
-    if(edu.id == e.target.dataset.id){index = i} ;
+    if(edu.id === e.target.dataset.id){index = i} ;
   })
    copy.education.splice(index,1);
 
